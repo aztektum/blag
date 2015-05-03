@@ -1,0 +1,6 @@
+# files
+*.swp
+*.pyc
+
+# dirs
+venv/
