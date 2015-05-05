@@ -5,10 +5,14 @@ from app import app
 @app.route('/index')
 def index(name=None):
     user = {'nickname': 'Michael'} # this luser is so fake
-    posts = [ # fake posts
+    posts = [ # fake posts or a bunch of dicts
         {
             'author': {'nickname': 'Dude'},
             'body': 'Brevity thing'
+        },
+        {
+            'author': {'nickname': 'Donnie'},
+            'body': 'Good burgers!'
         },
         {
             'author': {'nickname': 'Walter'},
