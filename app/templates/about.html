@@ -1,12 +1,4 @@
-<html>
-  <head>
-  {% if title %}
-    <title>{{ title }} - microblog</title>
-  {% else %}
-    <title>welcome to blag!</title>
-  {% endif %}
-  </head>
-  <body>
+{% extends "base.html" %}
+{% block content %}
     <h1>about</h1>
-  </body>
-</html>
+{% endblock %}
