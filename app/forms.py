@@ -1,3 +1,5 @@
+# forms.py defines forms available to us
+
 from flask.ext.wtf import Form
 from wtforms import StringField, BooleanField
 from wtforms.validators import DataRequired

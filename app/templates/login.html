@@ -1,3 +1,4 @@
+<!-- login.html login page template using jinja2 -->
 <!-- extend from base layout -->
 {% extends "base.html" %}
 
@@ -26,8 +27,8 @@ function set_openid(openid, pr)
       {% endfor %}<br>
     |{% for pr in providers %}
     	<a href="javascript:set_openid('{{ pr.url }}', '{{ pr.name }}');">{{ pr.name }}</a>|
-	{% end for %}
-	</p>
+     {% endfor %}
+    </p>
     <p>{{ form.remember_me }} Remember Me</p>
     <p><input type="submit" value="Sign In"></p>
   </form>

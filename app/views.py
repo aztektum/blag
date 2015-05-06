@@ -1,3 +1,8 @@
+# views.py describes how to render a url endpoint
+# if we add an endpoint, we need to add a view
+# each view starts with flask decorated @app.route
+# followed by a function definition
+
 from flask import render_template, flash, redirect
 from app import app
 from .forms import LoginForm
