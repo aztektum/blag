@@ -1,6 +1,8 @@
 # files
 *.swp
 *.pyc
+*.db
 
 # dirs
 venv/
+db_repository/
