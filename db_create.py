@@ -1,4 +1,7 @@
 #!venv/bin/python
+
+# db_create.py automates the creation of our SQLAlchemy DB's
+
 from migrate.versioning import api
 from config import SQLALCHEMY_DATABASE_URI
 from config import SQLALCHEMY_MIGRATE_REPO

@@ -1,3 +1,6 @@
+
+# models.py useful models for the blag app
+
 from app import db
 
 class User(db.Model):
