@@ -2,6 +2,7 @@
 *.swp
 *.pyc
 *.db
+TODO.md
 
 # dirs
 venv/
