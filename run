@@ -1,0 +1,5 @@
+#!/bin/sh
+
+RUN_BLAG=`/home/debian/blag/run.py`
+
+exec chpst -u debian $RUN_BLAG
