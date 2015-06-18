@@ -80,7 +80,7 @@ def after_login(resp):
 def before_request():
     g.user = current_user
 
-@app.route('logout')
+@app.route('/logout')
 def logout():
     logout_user()
     return redirect(url_for('index'))
