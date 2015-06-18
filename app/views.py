@@ -11,8 +11,9 @@ from .models import User
 
 @app.route('/')
 @app.route('/index')
-def index(name=None):
-    user = {'nickname': 'Michael'} # this luser is so fake
+@login_required
+def index():
+    user = g.user
     posts = [ # fake posts or a bunch of dicts
         {
             'author': {'nickname': 'Dude'},
@@ -74,3 +75,9 @@ def after_login(resp):
         session.pop('remember_me', None)
     login_user(user, remember = remember_me)
     return redirect(request.args.get('next') or url_for('index'))
+
+@app.before_request
+def before_request():
+    g.user = current_user
+
+

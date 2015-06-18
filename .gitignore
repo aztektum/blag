@@ -4,6 +4,7 @@
 *.db
 tags
 TODO.md
+*DS_Store*
 
 # dirs
 venv/
