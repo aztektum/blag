@@ -33,11 +33,6 @@ def index():
                             user=user,
                             posts=posts)
 
-@app.route('/about')
-def about(name=None):
-    return render_template('about.html',
-                            title='About')
-
 @app.route('/login', methods=['GET', 'POST'])
 @oid.loginhandler
 def login():
