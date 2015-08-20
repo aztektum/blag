@@ -1,5 +1,10 @@
 #!/bin/sh
 
-RUN_BLAG=`/home/debian/apps/blag/run.py`
+APPS=/home/debian/apps
+BIN_DIR=$APPS/blag
+VENV_DIR=$BIN_DIR/venv
 
-exec chpst -u debian $RUN_BLAG
+cd $BIN_DIR
+echo $PWD
+source $VENV_DIR/bin/activate
+exec chpst -u debian $BIN_DIR/run.py
