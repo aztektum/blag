@@ -4,7 +4,11 @@ APPS=/home/debian/apps
 BIN_DIR=$APPS/blag
 VENV_DIR=$BIN_DIR/venv
 
+activate () {
+	$VENV_DIR/bin/activate
+}
+
 cd $BIN_DIR
-echo $PWD
-source $VENV_DIR/bin/activate
+#source $VENV_DIR/bin/activate
+activate
 exec chpst -u debian $BIN_DIR/run.py
